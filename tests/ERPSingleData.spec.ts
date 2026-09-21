@@ -36,7 +36,7 @@ test.describe('ERP Inventroy Management',()=>{
             'India',
             'ranga',
             '9876543432',
-            'Test@gmail.com',
+            'Test2@gmail.com',
             '87654321',
             'Add new Customer'
         )
