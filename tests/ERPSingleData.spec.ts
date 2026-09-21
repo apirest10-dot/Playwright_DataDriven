@@ -1,6 +1,7 @@
 import { test } from '../hooks/ERPHooks'
 import { SuppliersPage } from '../Pages/SuppliersPage';
 import { CustomersPage } from '../Pages/CustomersPage';
+import { Stockpage } from '../Pages/StockItemsPage';
 
 test.describe('ERP Inventroy Management',()=>{
     // first test case for supplier module
@@ -42,6 +43,10 @@ test.describe('ERP Inventroy Management',()=>{
         await cus.handleAlerts()
         await cus.customerTable()
 
+    })
+    test('Validate Stock item page',async({page})=>{
+        const stock = new Stockpage(page)
+        await stock.NavigateToStock()
     })
     
 })
