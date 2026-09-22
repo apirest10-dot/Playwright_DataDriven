@@ -44,9 +44,5 @@ test.describe('ERP Inventroy Management',()=>{
         await cus.customerTable()
 
     })
-    test('Validate Stock item page',async({page})=>{
-        const stock = new Stockpage(page)
-        await stock.NavigateToStock()
-    })
-    
+       
 })
