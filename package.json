@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "All-Tests":"npx playwright test",
     "single-data":"npx playwright test tests/ERPSingleData.spec.ts",
     "Allure-reports": "npx allure generate allure-results --clean -o allure-report && npx allure open allure-report",
     "Json-data":"npx playwright test tests/UsingJsonData.spec.ts",
