@@ -2,7 +2,6 @@ import {test} from '../hooks/ERPHooks'
 import { SuppliersPage } from '../Pages/SuppliersPage'
 import { CustomersPage } from '../Pages/CustomersPage'
 import erpdata  from '../TestData/ERpData.json'
-
 // console.log(erpdata.Suppliers)
 // console.log(erpdata.customers)
 test.describe('ERP Managent Modules',()=>{
@@ -26,8 +25,7 @@ test.describe('ERP Managent Modules',()=>{
             await sup.supplierTable()
 
         })
-        
-    }
+         }
     for(const cusdata of erpdata.customers)
         {
          test(`Customer Using Json ${cusdata.Customername}`,async({page})=>{
